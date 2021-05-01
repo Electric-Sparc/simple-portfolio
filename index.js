@@ -3,7 +3,7 @@ const trades = require("./routes/trades");
 
 const app = express();
 
-let port = process.env.PORT || 80;
+let port = process.env.PORT || 5000;
 app.listen(port);
 
 app.use(express.json());
@@ -13,5 +13,3 @@ app.get("/", function (req, res) {
   console.log("ho");
   res.status(200).send("hi");
 });
-
-app.listen(port);
