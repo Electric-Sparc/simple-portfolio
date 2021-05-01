@@ -3,6 +3,12 @@ const trades = require("./routes/trades");
 
 const app = express();
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
 app.use(express.json());
 app.use("/api", trades);
 
@@ -11,4 +17,4 @@ app.get("/", function (req, res) {
   res.status(200).send("hi");
 });
 
-app.listen(3000);
+app.listen(port);
