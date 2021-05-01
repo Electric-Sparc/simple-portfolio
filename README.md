@@ -1,0 +1,2 @@
+# smallcase
+Portfolio management backend
