@@ -3,10 +3,7 @@ const trades = require("./routes/trades");
 
 const app = express();
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
+let port = process.env.PORT || 8080;
 app.listen(port);
 
 app.use(express.json());
