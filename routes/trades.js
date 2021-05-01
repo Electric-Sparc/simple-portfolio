@@ -107,7 +107,9 @@ router.post("/trades/:username", function (req, res) {
 
   trades.push(trade);
   tradeID += 1;
-  res.status(200).send("Trade placed successfully with Trade ID TX0" + tradeID);
+  res
+    .status(200)
+    .send("Trade placed successfully with Trade ID TX0" + tradeID - 1);
 });
 
 router.put("/trades/:username/:id", function (req, res) {
