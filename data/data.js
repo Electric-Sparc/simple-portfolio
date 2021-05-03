@@ -1,4 +1,4 @@
-let User = [
+let users = [
   {
     username: "adam",
     securities: [
@@ -56,6 +56,6 @@ let trades = [
 ];
 
 module.exports = {
-  userCollection: User,
+  userCollection: users,
   tradeCollection: trades,
 };
