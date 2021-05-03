@@ -1,5 +1,5 @@
 {
-  "name": "smallcase",
+  "name": "smallcase_backend",
   "version": "1.0.0",
   "description": "Portfolio managment APIs.",
   "main": "index.js",
@@ -7,10 +7,6 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
   "author": "-_0",
   "license": "ISC",
   "dependencies": {
